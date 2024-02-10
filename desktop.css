@@ -1,0 +1,75 @@
+@media (min-width: 560px) {
+  body {
+    width: 100vw;
+    display: flex;
+  }
+  body .board {
+    background-color: #1d7878;
+    border: 2px solid #12caca;
+    width: 30%;
+    min-height: 24% !important;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    padding-bottom: 4%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+  }
+  body .board .advice {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 28px;
+    margin-bottom: 3px;
+    color: #00f2ff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow: visible;
+  }
+  body .board .advice header {
+    font-weight: 500;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 14px;
+  }
+  body .board .advice .text p {
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: large;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  body .board #desktop {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+  body .board #desktop .desktop {
+    display: block;
+    width: 100%;
+  }
+  body .board #mobile {
+    display: none;
+  }
+  body .board #mobile .mobile {
+    display: none;
+  }
+  body .board #dice {
+    background-color: #00ff77;
+    border-radius: 50%;
+    padding: 4px;
+    max-width: 50px;
+    width: 20%;
+    max-height: 50px;
+    height: 20%;
+    display: flex;
+    position: absolute;
+    left: 45%;
+    bottom: -10%;
+  }
+  body .board #dice .dice {
+    margin: auto;
+    width: 60%;
+  }
+}/*# sourceMappingURL=desktop.css.map */

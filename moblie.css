@@ -1,0 +1,131 @@
+body {
+  background-color: #2d2f2e;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .board {
+  border: 2px solid #12caca;
+  width: 80%;
+  height: 43.4782608696vh;
+  margin: auto;
+  padding: 25px;
+  background-color: #1d7878;
+  position: relative;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+body .board .advice {
+  overflow: scroll;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body .board .advice header {
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 25px;
+  color: #00ff77;
+}
+body .board .advice .text p {
+  margin: 0%;
+  text-align: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: large;
+}
+body .board #desktop {
+  display: none;
+}
+body .board #desktop .desktop {
+  display: none;
+}
+body .board #mobile {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 3px 0px;
+  width: 70%;
+  overflow-x: hidden;
+  margin: auto;
+  margin-top: 14px;
+}
+body .board #mobile .mobile {
+  width: 100%;
+  scale: 1.3 2;
+}
+body .board #dice {
+  background: linear-gradient(to right, #00ff77, #000dff);
+  border-radius: 50%;
+  padding: 4px;
+  max-width: 50px;
+  width: 20%;
+  max-height: 50px;
+  height: 20%;
+  display: flex;
+  position: absolute;
+  left: 42%;
+  bottom: -10%;
+}
+body .board #dice .dice {
+  margin: auto;
+  width: 60%;
+}
+
+#dice:hover {
+  box-shadow: #00ff77 8px 5px 25px, #000dff -8px 5px 25px;
+}
+
+.dice_click {
+  animation: dice;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+.guide {
+  position: absolute;
+  left: -30%;
+  border: #000dff solid 2px;
+  background-color: red;
+  width: 10%;
+  animation-duration: 7s;
+  animation-name: guide;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+.guide p {
+  margin: 0%;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #00ff77;
+}
+
+@keyframes dice {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes guide {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 120%;
+  }
+}/*# sourceMappingURL=moblie.css.map */
